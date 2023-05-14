@@ -12,7 +12,6 @@ import {
   arrayUnion,
   doc,
   serverTimestamp,
-  Timestamp,
   updateDoc,
 } from "firebase/firestore";
 import { db, storage } from "../../firebase";

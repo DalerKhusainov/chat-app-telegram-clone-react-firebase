@@ -80,7 +80,7 @@ export const Register = () => {
           {err && <span className="registerErrText">Something went wrong</span>}
         </form>
         <p>
-          You do have an account? <Link to="login">Login</Link>
+          You do have an account? <Link to="/login">Login</Link>
         </p>
       </div>
     </div>

@@ -7,7 +7,6 @@
   height: 31.3rem;
   position: absolute;
   top: 0px;
-  //   right: -30.1rem;
   z-index: 1;
   padding: 10px 15px 15px 15px;
 
@@ -30,6 +29,10 @@
       border-radius: 3px;
       margin-right: 5px;
       padding: 5px 10px;
+
+      &::placeholder {
+        color: #adb5bd;
+      }
     }
 
     button {
@@ -42,12 +45,17 @@
       border-radius: 3px;
       border: none;
       color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background-color: #5c7cfa;
+      }
     }
   }
 
   &__field {
     padding-top: 1.5rem;
-    // margin-top: 1.5rem;
 
     .textInfo {
       text-align: center;

@@ -30,8 +30,6 @@ export const AddContact = ({
     "Find your friend to start chat!"
   );
 
-  console.log(user);
-
   const { currentUser } = useContext(AuthContext);
 
   const handleSearch = async () => {

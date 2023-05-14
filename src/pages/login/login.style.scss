@@ -13,6 +13,7 @@
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
     .logo {
       color: #5d5b8d;
@@ -48,6 +49,11 @@
         font-weight: bold;
         border: none;
         cursor: pointer;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          background-color: #5c7cfa;
+        }
       }
 
       .loginErrText {
