@@ -1,0 +1,25 @@
+.input-message {
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
+  min-width: 50rem;
+  border-top: 1px solid #ced4da;
+  border-left: 1px solid #ced4da;
+
+  &__form {
+    margin-right: auto;
+    width: 80%;
+
+    input {
+      border: none;
+      outline: none;
+      width: 100%;
+      padding: 10px;
+      background-color: inherit;
+
+      &::placeholder {
+        color: #ced4da;
+      }
+    }
+  }
+}

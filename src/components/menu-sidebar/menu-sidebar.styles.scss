@@ -1,0 +1,243 @@
+// .hidden-side-menu-sidebar {
+//   background-color: orangered;
+//   width: 100rem;
+//   height: 80rem;
+//   position: absolute;
+//   top: 0px;
+//   left: -99rem;
+// }
+
+.menu-sidebar {
+  display: grid;
+  grid-template-columns: 0.7fr 1.7fr;
+  position: absolute;
+  top: 0px;
+  //   left: -100rem;
+  width: 100rem;
+  height: 80rem;
+  z-index: 10;
+  transition: all 0.2s ease-in-out;
+
+  .menu {
+    opacity: 1;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.14fr;
+    transition: all 0.5s ease-in-out;
+    z-index: 5;
+  }
+
+  .menu-current-account {
+    background-color: #f8f9fa;
+    display: grid;
+    grid-template-rows: 1fr 0.7fr;
+    z-index: 10;
+    position: relative;
+  }
+
+  .menu-account-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 19px auto auto 22px;
+    color: #fff;
+    font-size: 22px;
+    background-color: #9775fa;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .menu-account-name-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+
+  .menu-account-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .menu-emoji-status {
+    color: #339af0;
+    font-size: 18px;
+  }
+
+  .menu-account-name-field-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #adb5bd;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-buttons {
+    background-color: #f8f9fa;
+    border-top: 1px solid #adb5bd;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+  }
+
+  .menu-btn-add-contact-and-logout-field {
+    border-bottom: 1px solid #adb5bd;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 5;
+  }
+
+  .add-contact-field {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-content: center;
+    padding-left: 35px;
+    height: 55px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .add-contact-field:hover {
+    background-color: #f1f3f5;
+  }
+
+  .btn-add-contact {
+    background-color: #40c057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .btn-add-contact-text {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .logout-field {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-content: center;
+    padding-left: 35px;
+    height: 55px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .logout-field:hover {
+    background-color: #f1f3f5;
+  }
+
+  .logout-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f06595;
+    padding-left: 4px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 30px;
+    color: #fff;
+  }
+
+  .logout-text {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .menu-button {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    align-content: center;
+    height: 55px;
+    width: 100%;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+
+  .menu-button:hover {
+    background-color: #f1f3f5;
+  }
+
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    padding: 15px;
+    height: 32px;
+    width: 32px;
+    border-radius: 10px;
+    color: #fff;
+  }
+
+  .clr-blue {
+    background-color: #74c0fc;
+  }
+
+  .clr-yellow {
+    background-color: #f59f00;
+  }
+
+  .clr-red {
+    background-color: #fa5252;
+  }
+
+  .clr-green {
+    background-color: #40c057;
+  }
+
+  .clr-violet {
+    background-color: #9775fa;
+  }
+
+  .clr-indigo {
+    background-color: #748ffc;
+  }
+
+  .btn-name {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 8px;
+  }
+
+  .btn-night-mode-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+  }
+
+  .app-version-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+    color: #adb5bd;
+  }
+
+  .app-version-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+
+  .empty-menu {
+    background-color: #000;
+    opacity: 0.5;
+  }
+}

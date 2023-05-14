@@ -1,0 +1,95 @@
+.addContact {
+  display: grid;
+  grid-template-rows: 2.5rem 4.5rem 1fr;
+  background-color: #f8f9fa;
+  border-left: 1px solid #f8f9fa;
+  width: 30rem;
+  height: 31.3rem;
+  position: absolute;
+  top: 0px;
+  //   right: -30.1rem;
+  z-index: 1;
+  padding: 10px 15px 15px 15px;
+
+  .closeIcon {
+    margin-left: auto;
+    color: #adb5bd;
+  }
+
+  .formSearchUser {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    input {
+      background-color: #d0ebff;
+      width: 100%;
+      height: 3rem;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      margin-right: 5px;
+      padding: 5px 10px;
+    }
+
+    button {
+      background-color: #7b96ec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+      width: 8rem;
+      border-radius: 3px;
+      border: none;
+      color: #fff;
+    }
+  }
+
+  &__field {
+    padding-top: 1.5rem;
+    // margin-top: 1.5rem;
+
+    .textInfo {
+      text-align: center;
+      font-size: 1.6rem;
+      color: #7b96ec;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 5rem 1fr 7rem;
+
+      .contactImage {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .contactName {
+        font-size: 1.4rem;
+        font-weight: 700;
+      }
+
+      .bnt-start {
+        height: 3rem;
+        width: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 3px;
+        background-color: #20c997;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          background-color: #099268;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.chat-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1rem;
+  border-bottom: 1px solid #ced4da;
+  border-left: 1px solid #ced4da;
+
+  &__info {
+    font-size: 1.4rem;
+
+    .name {
+      font-weight: 700;
+    }
+  }
+}
